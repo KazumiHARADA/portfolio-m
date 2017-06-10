@@ -10,6 +10,7 @@ import AboutMe from '../components/AboutMe'
 import LatestPosts from '../components/LatestPosts'
 import Skills from '../components/Skills'
 import Works from '../components/Works'
+import Footer from '../components/Footer'
 
 //import Layout from '../components/Layout'
 // import AddTodo from '../containers/AddTodo'
@@ -39,6 +40,7 @@ const App = () => (
             <Grid>
                 <Cell col="12"><Works/></Cell>
             </Grid>
+            <Footer/>
         </Content>
     </Layout>
 );

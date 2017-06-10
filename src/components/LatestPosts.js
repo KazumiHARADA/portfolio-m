@@ -3,11 +3,8 @@
  */
 import React from 'react'
 import Card from "react-mdl/lib/Card/Card"
-import List from "react-mdl/lib/List"
 import ListItem from "react-mdl/lib/List/ListItem"
 import ListItemContent from "react-mdl/lib/List/ListItemContent"
-import ListItemAction from "react-mdl/lib/List/ListItemAction"
-import Icon from "react-mdl/lib/Icon"
 
 const LatestPosts = () => (
     <div>

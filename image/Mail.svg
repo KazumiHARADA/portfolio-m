@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="45px" height="36px" viewBox="0 0 45 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Portfoilo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-751.000000, -1882.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="screen" transform="translate(0.000000, 2.000000)">
+                <g id="Contact-me" transform="translate(1.000000, 1799.000000)">
+                    <g id="sns-icon" transform="translate(485.000000, 81.000000)">
+                        <path d="M305.571,0 L270.138999,0 C267.703049,0 265.732144,1.99305004 265.732144,4.42900009 L265.709999,31.0030006 C265.709999,33.4389507 267.703049,35.4320007 270.138999,35.4320007 L305.571,35.4320007 C308.00695,35.4320007 310,33.4389507 310,31.0030006 L310,4.42900009 C310,1.99305004 308.00695,0 305.571,0 Z M305.571,8.85800018 L287.855,19.9305004 L270.138999,8.85800018 L270.138999,4.42900009 L287.855,15.5015003 L305.571,4.42900009 L305.571,8.85800018 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

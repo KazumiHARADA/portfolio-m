@@ -1,22 +1,29 @@
 import React from 'react'
-import FilterLink from '../containers/FilterLink'
+import MDLFooter from "react-mdl/lib/Footer/Footer"
+import FABButton from "react-mdl/lib/FABButton"
+import Style from "../style.css"
 
 const Footer = () => (
-  <p>
-    Show:
-    {" "}
-    <FilterLink filter="SHOW_ALL">
-      All
-    </FilterLink>
-    {", "}
-    <FilterLink filter="SHOW_ACTIVE">
-      Active
-    </FilterLink>
-    {", "}
-    <FilterLink filter="SHOW_COMPLETED">
-      Completed
-    </FilterLink>
-  </p>
+    <MDLFooter size="mini">
+        <div style={Style.footer}>
+            Contact me
+            <div>
+                <FABButton style={Style.clear_background} ripple>
+                    <img src="../image/Twitter.svg"/>
+                </FABButton>
+                <FABButton style={Style.clear_background} ripple>
+                    <img src="../image/Github.svg"/>
+                </FABButton>
+                <FABButton style={Style.clear_background} ripple>
+                    <img src="../image/Facebook.svg"/>
+                </FABButton>
+                <FABButton style={Style.clear_background} ripple>
+                    <img src="../image/Mail.svg"/>
+                </FABButton>
+            </div>
+        </div>
+
+    </MDLFooter>
 )
 
 export default Footer
