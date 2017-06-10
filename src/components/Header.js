@@ -2,23 +2,19 @@
  * Created by haradakazumi on 2017/06/10.
  */
 import React from 'react'
-import Appbar from 'muicss/lib/react/appbar';
-
-let s1 = {verticalAlign: 'middle'};
-let s2 = {textAlign: 'right'};
-
+import MDLHeader from "react-mdl/lib/Layout/Header"
+import Navigation from "react-mdl/lib/Layout/Navigation"
+import Drawer from "react-mdl/lib/Layout/Drawer"
 
 const Header = () => (
-    <Appbar>
-        <table width="100%">
-            <tbody>
-            <tr style={s1}>
-                <td className="mui--appbar-height">Left Side</td>
-                <td className="mui--appbar-height" style={s2}>Right Side</td>
-            </tr>
-            </tbody>
-        </table>
-    </Appbar>
+    <MDLHeader title="Title" fixedHeader>
+        <Navigation>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </Navigation>
+    </MDLHeader>
 )
 
 export default Header
