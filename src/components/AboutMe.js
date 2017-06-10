@@ -4,7 +4,11 @@
 import React from 'react'
 
 const AboutMe = () => (
-    <div>aboutme</div>
+    <div>aboutme
+        <div>
+            Hi
+        </div>
+    </div>
 )
 
 export default AboutMe

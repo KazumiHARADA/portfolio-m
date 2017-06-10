@@ -4,7 +4,6 @@
 import React from 'react'
 import MDLHeader from "react-mdl/lib/Layout/Header"
 import Navigation from "react-mdl/lib/Layout/Navigation"
-import Drawer from "react-mdl/lib/Layout/Drawer"
 
 const Header = () => (
     <MDLHeader title="Title" fixedHeader>
