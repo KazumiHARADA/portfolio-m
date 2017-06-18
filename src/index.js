@@ -2,6 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
+import { ThemeProvider } from 'react-css-themr';
 import todo from './reducers'
 import App from './components/App'
 
@@ -16,7 +17,9 @@ console.log(store.getState())
 
 render(
   <Provider store={store}>
-    <App />
+      <ThemeProvider>
+          <App/>
+      </ThemeProvider>
   </Provider>,
   document.getElementById('root')
 )

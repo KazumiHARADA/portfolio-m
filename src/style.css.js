@@ -3,6 +3,10 @@
  */
 export default {
 
+    base : {
+        "font-family":"Roboto, Helvetica, Arial, sans-serif"
+    },
+
     overflow_y_parent: {
         "overflowX":"auto",
         "overflowY":"hidden",
@@ -27,5 +31,13 @@ export default {
     clear_background : {
         "background": "transparent",
         "box-shadow": "none"
-}
+    },
+
+    top_image : {
+        "width":"100%"
+    },
+
+    section_title: {
+        "font-size":"24px"
+    }
 }

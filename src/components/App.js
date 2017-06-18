@@ -1,6 +1,6 @@
 import React from 'react'
-import Layout from "react-mdl/lib/Layout/Layout"
-import Content from "react-mdl/lib/Layout/Content"
+import Layout from "react-toolbox/lib/layout/Layout"
+import Panel from "react-toolbox/lib/layout/Panel"
 import Grid from "react-mdl/lib/Grid/Grid"
 import Cell from "react-mdl/lib/Grid/Cell"
 
@@ -27,8 +27,8 @@ import Footer from '../components/Footer'
 
 const App = () => (
     <Layout>
-        <Header />
-        <Content>
+        <Panel>
+            <Header />
             <Main/>
             <Grid>
                 <Cell col="8"><AboutMe/></Cell>
@@ -41,7 +41,7 @@ const App = () => (
                 <Cell col="12"><Works/></Cell>
             </Grid>
             <Footer/>
-        </Content>
+        </Panel>
     </Layout>
 );
 
