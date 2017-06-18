@@ -10,7 +10,7 @@ import Slider from 'react-toolbox/lib/slider';
 import Style from "../style.css"
 
 const Skills = () => (
-    <div>
+    <section>
         <h4>Skills</h4>
         <Grid>
             <Cell col="1"/>
@@ -126,7 +126,7 @@ const Skills = () => (
             </Cell>
             <Cell col="1" />
         </Grid>
-    </div>
+    </section>
 )
 
 export default Skills

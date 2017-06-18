@@ -4,90 +4,27 @@
 import React from 'react'
 import Card from "react-mdl/lib/Card/Card"
 import CardTitle from "react-mdl/lib/Card/CardTitle"
-import CardActions from "react-mdl/lib/Card/CardActions"
-import Button from "react-mdl/lib/Button"
+import WorkCard from "../containers/WorkCard"
 import Style from "../style.css"
 
 const Works = () => (
-    <div>
-        Works
+    <section>
+        <h4>Works</h4>
 
-        <div style={Style.overflow_y_parent}>
-            <Card shadow={5} style={Style.overflow_y_child}>
-                <CardTitle expand style={{
-                    color: '#fff',
-                    background: 'url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC',
-                    "padding-top":"182px"
-                }}>Update</CardTitle>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aenan convallis.
-
-                <CardActions border>
-                    <Button colored>View Updates</Button>
-                </CardActions>
-            </Card>
-            <Card shadow={5} style={Style.overflow_y_child}>
-                <CardTitle expand style={{
-                    color: '#fff',
-                    background: 'url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC'
-                }}>Update</CardTitle>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aenan convallis.
-
-                <CardActions border>
-                    <Button colored>View Updates</Button>
-                </CardActions>
-            </Card>
-            <Card shadow={5} style={Style.overflow_y_child}>
-                <CardTitle expand style={{
-                    color: '#fff',
-                    background: 'url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC'
-                }}>Update</CardTitle>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aenan convallis.
-
-                <CardActions border>
-                    <Button colored>View Updates</Button>
-                </CardActions>
-            </Card>
-            <Card shadow={5} style={Style.overflow_y_child}>
-                <CardTitle expand style={{
-                    color: '#fff',
-                    background: 'url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC'
-                }}>Update</CardTitle>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aenan convallis.
-
-                <CardActions border>
-                    <Button colored>View Updates</Button>
-                </CardActions>
-            </Card>
-            <Card shadow={5} style={Style.overflow_y_child}>
-                <CardTitle expand style={{
-                    color: '#fff',
-                    background: 'url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC'
-                }}>Update</CardTitle>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aenan convallis.
-
-                <CardActions border>
-                    <Button colored>View Updates</Button>
-                </CardActions>
-            </Card>
-            <Card shadow={5} style={Style.overflow_y_child}>
-                <CardTitle expand style={{
-                    color: '#fff',
-                    background: 'url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC'
-                }}>Update</CardTitle>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aenan convallis.
-
-                <CardActions border>
-                    <Button colored>View Updates</Button>
-                </CardActions>
-            </Card>
+        <div style={Style.work_base}>
+            <ul style={Style.work_list}>
+                <li style={Style.work_item}>
+                    <WorkCard data={{url: "../image/e-commerce.png", title:"E-Commerce App", text: "aaaabbbbbccc"}}/>
+                </li>
+                <li style={Style.work_item}>
+                    <WorkCard data={{url: "../image/flea-market.png",title:"Flea Market App", text: "aaaabbbbbccc"}}/>
+                </li>
+                <li style={Style.work_item}>
+                    <WorkCard data={{url: "../image/system.png",title:"System Design", text: "aaaabbbbbccc"}}/>
+                </li>
+            </ul>
         </div>
-    </div>
+    </section>
 )
 
 export default Works

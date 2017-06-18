@@ -7,7 +7,7 @@ import ListItem from "react-mdl/lib/List/ListItem"
 import ListItemContent from "react-mdl/lib/List/ListItemContent"
 
 const LatestPosts = () => (
-    <div>
+    <section>
         <h4>Latest Posts</h4>
 
         <Card shadow={0} style={{width: '100%', height: '100%', margin: 'auto'}}>
@@ -23,7 +23,7 @@ const LatestPosts = () => (
             </ListItem>
             </div>
         </Card>
-    </div>
+    </section>
 )
 
 export default LatestPosts
