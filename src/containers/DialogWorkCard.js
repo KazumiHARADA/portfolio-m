@@ -13,10 +13,10 @@ const mapStateToProps = (state) => {
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch,ownProps) => {
     return {
         showDialog: () => {
-            dispatch(showDialog())
+            dispatch(showDialog(ownProps.workId))
         },
         hideDialog: () => {
             dispatch(hideDialog())

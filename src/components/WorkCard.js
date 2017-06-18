@@ -6,6 +6,7 @@ import Card from "react-mdl/lib/Card/Card"
 import CardTitle from "react-mdl/lib/Card/CardTitle"
 import CardActions from "react-mdl/lib/Card/CardActions"
 import Button from "react-toolbox/lib/button"
+import Dialog from "react-toolbox/lib/dialog"
 import Style from "../style.css"
 
 const WorkCard = ({data,workId,showDialog}) => {
@@ -37,10 +38,13 @@ const WorkCard = ({data,workId,showDialog}) => {
             <CardActions border>
                 <Button colored onClick={() => {
                     showDialog(workId);
-                    alert("a");
                 }}>Read More</Button>
             </CardActions>
+            <Dialog active={false} title='My awesome dialog' type="normal">
+                <p>Here you can add arbitrary content. Components like Pickers are using dialogs now.</p>
+            </Dialog>
         </Card>
+
     )
 }
 
