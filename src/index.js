@@ -1,17 +1,17 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
-import { createStore } from 'redux'
+import { applyMiddleware, createStore } from 'redux'
+import createLogger from 'redux-logger';
 import { ThemeProvider } from 'react-css-themr';
-import todo from './reducers'
+import reducer from './reducers'
 import App from './components/App'
 
-let store = createStore(todo)
+const logger = createLogger({
+    //empty options
+});
 
-import { addTodo, toggleTodo } from './actions'
-store.dispatch(addTodo('Hello React!'))
-store.dispatch(addTodo('Hello Redux!'))
-store.dispatch(toggleTodo(0))
+let store = createStore(reducer, applyMiddleware(logger));
 
 console.log(store.getState())
 

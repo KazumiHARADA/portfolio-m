@@ -3,25 +3,30 @@
  */
 import React from 'react'
 import Card from "react-mdl/lib/Card/Card"
-import ListItem from "react-mdl/lib/List/ListItem"
-import ListItemContent from "react-mdl/lib/List/ListItemContent"
+import { List, ListItem, ListSubHeader, ListDivider, ListCheckbox } from 'react-toolbox/lib/list';
 
 const LatestPosts = () => (
     <section>
         <h4>Latest Posts</h4>
 
-        <Card shadow={0} style={{width: '100%', height: '100%', margin: 'auto'}}>
-            <div>
-            <ListItem threeLine>
-                <ListItemContent avatar="person" subtitle="Bryan Cranston played the role of Walter in Breaking Bad. He is also known for playing Hal in Malcom in the Middle.">Bryan Cranston</ListItemContent>
-            </ListItem>
-            <ListItem threeLine>
-                <ListItemContent avatar="person" subtitle="Bryan Cranston played the role of Walter in Breaking Bad. He is also known for playing Hal in Malcom in the Middle.">Bryan Cranston</ListItemContent>
-            </ListItem>
-            <ListItem threeLine>
-                <ListItemContent avatar="person" subtitle="Bryan Cranston played the role of Walter in Breaking Bad. He is also known for playing Hal in Malcom in the Middle.">Bryan Cranston</ListItemContent>
-            </ListItem>
-            </div>
+        <Card shadow={4} style={{width: '100%', height: '100%', margin: 'auto'}}>
+            <List selectable ripple>
+                <ListItem
+                    avatar='../image/icon_qiita.png'
+                    caption='Dr. Manhattan'
+                    legend="Jonathan 'Jon' Osterman"
+                />
+                <ListItem
+                    avatar='../image/icon_twitter.png'
+                    caption='Ozymandias'
+                    legend='Adrian Veidt'
+                />
+                <ListItem
+                    avatar='../image/icon_twitter.png'
+                    caption='Ozymandias'
+                    legend='Adrian Veidt'
+                />
+            </List>
         </Card>
     </section>
 )

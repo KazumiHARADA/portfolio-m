@@ -28,3 +28,17 @@ export const redirectLink = (url) => {
         url
     }
 }
+
+export const showDialog = (workId) => {
+    return {
+        type: 'SHOW_DIALOG',
+        workId
+    }
+}
+
+export const hideDialog = (workId) => {
+    return {
+        type: 'HIDE_DIALOG',
+        workId
+    }
+}
