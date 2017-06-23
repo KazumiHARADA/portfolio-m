@@ -8,8 +8,15 @@ import WorkCard from '../components/WorkCard'
 
 
 const mapStateToProps = (state) => {
+
+    let active = false;
+    if (state.workDialog.visibility == "show") {
+        active = true;
+    }
+
     return {
-        active: state.workDialog
+        active:active,
+        workId:state.workDialog.workId
     }
 }
 
@@ -19,7 +26,7 @@ const mapDispatchToProps = (dispatch,ownProps) => {
             dispatch(showDialog(ownProps.workId))
         },
         hideDialog: () => {
-            dispatch(hideDialog())
+            dispatch(hideDialog(ownProps.workId))
         }
     }
 }

@@ -13,10 +13,12 @@ const GithubIcon = () => (
 );
 
 const Header = () => (
-    <AppBar title='React Toolbox' leftIcon='menu' rightIcon={<GithubIcon />} fixed={true}>
+    <AppBar title='React Toolbox' rightIcon={<GithubIcon />} fixed={true}>
         <Navigation type='horizontal'>
-            <Link href='http://' label='Inbox' icon='inbox' />
-            <Link href='http://' active label='Profile' icon='person' />
+            <Link href='http://' label='AboutMe' />
+            <Link href='http://' label='LatestPosts' />
+            <Link href='http://' label='Skills' />
+            <Link href='http://' label='Works' />
         </Navigation>
     </AppBar>
 )

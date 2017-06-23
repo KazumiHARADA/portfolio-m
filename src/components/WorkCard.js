@@ -9,10 +9,12 @@ import Button from "react-toolbox/lib/button"
 import Dialog from "react-toolbox/lib/dialog"
 import Style from "../style.css"
 
-const WorkCard = ({data,workId,showDialog}) => {
+const WorkCard = ({data,workId,showDialog,hideDialog,active}) => {
     console.log(data);
     console.log(workId);
     console.log(showDialog);
+    console.log(hideDialog);
+    console.log(active);
 
     if (data.url == undefined) {
         data.url = "../image/e-commerce.png";
@@ -25,6 +27,13 @@ const WorkCard = ({data,workId,showDialog}) => {
     if (data.text == undefined) {
         data.text = "text";
     }
+
+    const handleClose = () => {hideDialog(workId)}
+
+    const actions = [{
+        label: 'CLOSE',
+        onClick: handleClose
+    }]
 
     return (
         <Card shadow={4} style={Style.work_card}>
@@ -40,7 +49,7 @@ const WorkCard = ({data,workId,showDialog}) => {
                     showDialog(workId);
                 }}>Read More</Button>
             </CardActions>
-            <Dialog active={false} title='My awesome dialog' type="normal">
+            <Dialog actions={actions} onEscKeyDown={handleClose} onOverlayClick={handleClose} active={active} title='My awesome dialog' type="normal">
                 <p>Here you can add arbitrary content. Components like Pickers are using dialogs now.</p>
             </Dialog>
         </Card>
@@ -55,7 +64,9 @@ WorkCard.propTypes = {
         text : PropTypes.string.isRequired
     }).isRequired).isRequired,
     workId: PropTypes.number.isRequired,
-    showDialog: PropTypes.func.isRequired
+    showDialog: PropTypes.func.isRequired,
+    hideDialog: PropTypes.func.isRequired,
+    active:PropTypes.bool.isRequired
 }
 
 export default WorkCard
