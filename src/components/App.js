@@ -9,7 +9,7 @@ import Main from '../components/Main'
 import AboutMe from '../components/AboutMe'
 import LatestPosts from '../components/LatestPosts'
 import Skills from '../components/Skills'
-import Works from '../components/Works'
+import WorkList from '../containers/WorkList'
 import Footer from '../components/Footer'
 
 //import Layout from '../components/Layout'
@@ -38,7 +38,7 @@ const App = () => (
                 <Cell col="12"><Skills/></Cell>
             </Grid>
             <Grid>
-                <Cell col="12"><Works/></Cell>
+                <Cell col="12"><WorkList/></Cell>
             </Grid>
             <Footer/>
         </Panel>

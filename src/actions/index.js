@@ -29,6 +29,7 @@ export const redirectLink = (url) => {
     }
 }
 
+/** 消すかも **/
 export const showDialog = (workId) => {
     return {
         type: 'SHOW_DIALOG',
@@ -36,9 +37,21 @@ export const showDialog = (workId) => {
     }
 }
 
+/** 消すかも **/
 export const hideDialog = (workId) => {
     return {
         type: 'HIDE_DIALOG',
         workId
     }
+}
+
+let nextWorkId = 0;
+export const addWork = (title,description,image_url) => {
+    return {
+        type: 'ADD_WORK',
+        id : nextWorkId++,
+        title : title,
+        description : description,
+        image_url : image_url
+    };
 }

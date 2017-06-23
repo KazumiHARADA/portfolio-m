@@ -25,7 +25,7 @@ export default {
 
     work_base: {position: "relative", overflow: "hidden"},
 
-    work_list: {float: "left", left: "47.5%", position: "relative", "list-style-type": "none"},
+    works: {float: "left", left: "47.5%", position: "relative", "list-style-type": "none"},
 
     work_item: {float: "left", left: "-50%", position: "relative", "margin-right":"20px"},
 
